@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #4CAF50!important;
+    border-radius: 2px;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #f2f2f2;
+    color: black;
+    border-radius: 8px;
+}
+
+.myLogo {
+    width: 190px;
+    height: 120px;
+}
+
+
+.side {
+    width: 19%;
+    height: 15%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: sticky;
+
+}
+
+.content-side {
+    vertical-align: middle;
+    display: inline-block;
+    background-color: #aaa;
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+    margin: 5px;
+}
+
+.main {
+    width: 79%;
+    background-color: white;
+
+}
+div.gallery img {
+    width: 100%;
+    height: 350px;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.btn {
+    padding: 7px;
+}
+
+.thumbnail .caption {
+    padding: 0;
+}
+
+.img-prod {
+    margin-bottom: 5px;
+    height: 400px;
+    width: 250px;
+}
+
+
+.side {
+    margin-left: 25px;
+}
+
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.options {
+    float: right;
+    padding-right: 20px;
+    padding-top: 4%;
+}
+.products {
+    border: 1px solid gainsboro;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+.link-size {
+    font-size: 120%;
+}
+
+.link-text {
+    color: #ffc107!important;
+}
+
+.link-text:hover {
+    color: #000;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+div, p, a, span, h1, h2, h3, h4, h5, h6, strong {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 50%;
+    background-color: #ff5722!important;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 0.7%;
+    position: fixed;
+    bottom: 30px;
+    font-size: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+.content-footer {
+    padding-left: 31%;
+
+}
+.color-background {
+    background-color: #4CAF50;
+}
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+}
+.follow-us, .follow-us:hover {
+    color: black;
+}
