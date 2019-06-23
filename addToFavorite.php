@@ -2,7 +2,7 @@
 include("connection.php");
 
 $url = $_SERVER['HTTP_REFERER'];
-if ($url != "http://localhost:63342/login/productDetails.php") {
+if ($url != "http://localhost:63342/OnlineShop/productDetails.php") {
     $name = $_POST['name'];
     $query1 = mysqli_query($conn, "SELECT * FROM product_order WHERE id = '" . $name . "'");
     if (mysqli_num_rows($query1) > 0) {

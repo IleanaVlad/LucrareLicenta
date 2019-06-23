@@ -32,14 +32,8 @@ include "connection.php";
     </style>
     <script>
         function update(id) {
-
-            //console.log(id);
             $('select.quantityProd' + id).on('change', function () {
-                //console.log('select.quantityProd+id');
                 var decision = $(this).val();
-                //var decision = $( "#myselect option:selected" ).text();
-                //console.log(decision);
-                //alert(id);
                 $.ajax({
                     type: "POST",
                     url: "updateQuantityProduct.php",
@@ -58,19 +52,13 @@ include "connection.php";
             var oldPrice = document.getElementById("oldPrice" + idOrder).value;
             var productPrice = document.getElementById("oldPrice" + idOrder).name;
 
-            //console.log(productPrice);
-            ///console.log("-" + oldPrice);
             var p = document.getElementById(idOrder);
             var quantity = options[index].text;
-            //console.log(content);
-            // var oldPrice = q/productPrice;
             var newPrice = productPrice * quantity;
-            ///console.log("=" + newPrice);
 
             var pr = document.createTextNode(newPrice);
             p.appendChild(pr);
             var l = document.createTextNode(" lei");
-            //console.log(l);
             p.appendChild(l);
 
 
@@ -78,12 +66,8 @@ include "connection.php";
 
             var div = document.getElementById(oldSum);
             document.getElementById(oldSum).innerHTML = "";
-            //document.getElementsByClassName("total-payment float-right").innerHTML = "";
-            ///console.log("+" + oldSum);
             oldSum = oldSum - oldPrice;
-            //console.log("old sum after s " + oldSum);
             var newSum = oldSum + newPrice;
-            //console.log("new sum " + newSum);
             div.setAttribute("id", newSum);
             var a = document.getElementById("oldPrice" + idOrder);
             a.setAttribute("value", newPrice);
@@ -197,8 +181,8 @@ if (mysqli_num_rows($query3) > 0) {
                                             <input type="hidden" id="oldPrice<?php echo $row3[0]; ?>"
                                                    value="<?php echo $row4[3] * $quantity; ?>"
                                                    name="<?php echo $row4[3]; ?>">
-                                            <p id="<?php echo $row3[0]; ?>"><strong><?php echo($row4[3] * $quantity) ?>
-                                                    lei</strong></p>
+                                            <p id="<?php echo $row3[0]; ?>"><?php echo($row4[3] * $quantity) ?>
+                                                    lei</p>
                                         </div>
 
                                         <div class="col">

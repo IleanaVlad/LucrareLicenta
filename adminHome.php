@@ -20,19 +20,19 @@ include('loginDB.php');
     </style>
     <script>
         function addProducts() {
-            location.replace("http://localhost:63342/login/addProductsPage.php")
+            location.replace("http://localhost:63342/OnlineShop/addProductsPage.php")
         }
 
         function updateDeleteProducts() {
-            location.replace("http://localhost:63342/login/updateDeleteProductsPage.php")
+            location.replace("http://localhost:63342/OnlineShop/updateDeleteProductsPage.php")
         }
 
         function checkBookmarks() {
-            location.replace("http://localhost:63342/login/checkBookmarks.php")
+            location.replace("http://localhost:63342/OnlineShop/checkBookmarks.php")
         }
 
         function checkOrders() {
-            location.replace("http://localhost:63342/login/checkOrders.php")
+            location.replace("http://localhost:63342/OnlineShop/checkOrders.php")
         }
     </script>
 </head>
