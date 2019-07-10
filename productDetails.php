@@ -67,6 +67,8 @@ include "connection.php";
 <div class="navbar">
     <a href="aboutUs.php">Despre noi</a>
     <a href="clientHome.php">Cumparaturi</a>
+    <a href="customize.php">Personalizeaza semn</a>
+    <a href="showBookmarks.php">Semne personalizate</a>
 </div>
 <div class="row">
     <div class="main col-sm-12">
